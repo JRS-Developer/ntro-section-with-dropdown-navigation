@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-flex px-6 py-4 rounded-2xl border transition-all border-transparent font-bold hover:border-primary hover:bg-transparent focus:outline focus:outline-offset-2 focus:outline-2;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:text-primary focus:outline-gray-400;
+  }
+
+  .btn-outline-primary {
+    @apply bg-transparent border border-gray-400 text-gray-400 hover:text-primary hover:border-primary;
+  }
+}
+
+.nav-collapse {
+  @apply fixed left-0 top-0 w-full h-full -z-10 bg-black/80 opacity-0 transition-all;
+}
+
+.nav-collapse-open {
+  @apply opacity-100 z-10;
+}
+
+.nav-content {
+  @apply fixed flex flex-col gap-4 p-6 ml-auto w-60 h-full bg-white transition-all top-0 -right-full invisible z-10;
+}
+
+.nav-content--open {
+  @apply visible right-0;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body class="font-sans text-gray-400 bg-white">
+    <header class="py-6 px-4">
+      <nav class="flex">
+        <div class="flex justify-between w-full">
+          <a href="#">
+            <img src="./images/logo.svg" alt="Snap Logo" />
+          </a>
+          <button class="md:hidden" id="nav-open-btn" aria-label="Open Menu">
+            <img src="./images/icon-menu.svg" alt="" />
+          </button>
+        </div>
+        <div id="nav-collapse" class="nav-collapse">
+          <ul class="nav-content" id="nav-content">
+            <li class="flex justify-end mb-4">
+              <button id="nav-close-btn" aria-label="Close">
+                <img src="./images/icon-close-menu.svg" />
+              </button>
+            </li>
+            <li>
+              <button
+                aria-controls="menu-list-features"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                class="flex items-center"
+              >
+                Features
+                <span class="ml-4">
+                  <img src="./images/icon-arrow-down.svg" alt="" />
+                  <img src="./images/icon-arrow-up.svg" alt="" class="hidden" />
+                </span>
+              </button>
+              <ul class="hidden" id="menu-list-features" role="menu">
+                <li role="none">
+                  <a href="#" role="menuitem">
+                    <img src="./images/icon-todo.svg" alt="Todo list icon" />
+                    <span>Todo List</span>
+                  </a>
+                </li>
+                <li role="none">
+                  <a href="#" role="menuitem">
+                    <img src="./images/icon-calendar.svg" alt="Calendar icon" />
+                    <span>Calendar</span>
+                  </a>
+                </li>
+                <li role="none">
+                  <a href="#" role="menuitem">
+                    <img
+                      src="./images/icon-reminders.svg"
+                      alt="Reminders icon"
+                    />
+                    <span>Reminders</span>
+                  </a>
+                </li>
+                <li role="none">
+                  <a href="#" role="menuitem">
+                    <img src="./images/icon-planning.svg" alt="Planning icon" />
+                    <span>Planning</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button
+                aria-controls="menu-list-company"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                class="flex items-center"
+              >
+                Company
+                <span class="ml-4">
+                  <img src="./images/icon-arrow-down.svg" alt="" />
+                  <img src="./images/icon-arrow-up.svg" alt="" class="hidden" />
+                </span>
+              </button>
+              <ul class="hidden" role="menu">
+                <li role="none">
+                  <a href="#" role="menuitem"> History </a>
+                </li>
+                <li role="none">
+                  <a href="#" role="menuitem"> Our Team </a>
+                </li>
+                <li role="none">
+                  <a href="#" role="menuitem"> Blog </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"> Careers </a>
+            </li>
+            <li>
+              <a href="#"> About </a>
+            </li>
+            <li>
+              <a href="#">Login</a>
+              <a href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="flex flex-col gap-12">
+        <div class="flex flex-col gap-6 px-4 text-center">
+          <h1 class="text-4xl font-bold text-primary">Make remote work</h1>
+          <p class="text-gray-400">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <div>
+            <button class="btn btn-primary">Learn more</button>
+          </div>
+          <div
+            class="grid grid-cols-4 gap-4 place-items-center mt-8 grid-rows-[1.5rem]"
+          >
+            <img
+              src="./images/client-databiz.svg"
+              alt="Databiz Logo"
+              height="20"
+              class="max-h-full"
+            />
+            <img
+              src="./images/client-audiophile.svg"
+              alt="Audiophile Logo"
+              height="20"
+              class="max-h-full"
+            />
+            <img
+              src="./images/client-meet.svg"
+              alt="Meet Logo"
+              height="20"
+              class="max-h-full"
+            />
+            <img
+              src="./images/client-maker.svg"
+              alt="Maker Logo"
+              height="20"
+              class="max-h-full"
+            />
+          </div>
+        </div>
+        <div class="order-first">
+          <img src="./images/image-hero-mobile.png" alt="Man using a laptop" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+
+    <script src="./scripts/index.ts" type="module"></script>
+  </body>
+</html>
